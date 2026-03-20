@@ -1,0 +1,30 @@
+export const tokens = {
+  colors: {
+    bgPrimary: '#F7F7F5',
+    bgSecondary: '#EFEFEA',
+    surface: '#FFFFFF',
+    border: '#DADAD3',
+    brand: '#2B3436',
+    textPrimary: '#141414',
+    textSecondary: '#5D5D57',
+    textDisabled: '#A8A8A1',
+    success: '#2F8F63',
+    info: '#5C7FA3',
+    error: '#C85C5C',
+    warning: '#D29A2E',
+  },
+  radii: {
+    sm: 12,
+    card: 20,
+    lg: 24,
+    xl: 28,
+    phone: 36,
+  },
+  space: {
+    sm: 12,
+    md: 16,
+    lg: 20,
+    xl: 24,
+    xxl: 32,
+  },
+} as const;

@@ -5,6 +5,33 @@
     "paths": {
       "@/*": [
         "./*"
+      ],
+      "@config/*": [
+        "./src/config/*"
+      ],
+      "@i18n/*": [
+        "./src/i18n/*"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@constants/*": [
+        "./src/constants/*"
+      ],
+      "@providers/*": [
+        "./src/providers/*"
+      ],
+      "@services/*": [
+        "./src/services/*"
+      ],
+      "@theme/*": [
+        "./src/theme/*"
+      ],
+      "@ui/*": [
+        "./src/ui/*"
+      ],
+      "@src/*": [
+        "./src/*"
       ]
     }
   },
