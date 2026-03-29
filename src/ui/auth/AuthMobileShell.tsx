@@ -1,5 +1,7 @@
 import { PropsWithChildren, ReactNode } from 'react';
 import { Box, ScrollView, Text, VStack } from 'native-base';
+import { Platform } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { tokens } from '@theme/tokens';
 
 const nb = (px: number) => px / 4;
@@ -30,15 +32,18 @@ export function AuthMobileShell({
   heroGap = 10,
   cardPadding = 20,
 }: Props) {
+  const insets = useSafeAreaInsets();
+  const topPad = Platform.OS === 'web' ? 24 : Math.max(insets.top, 24);
   
   return (
-    <Box flex={1} bg={tokens.colors.bgPrimary} safeAreaTop>
+    <Box flex={1} bg={tokens.colors.bgPrimary}>
       <ScrollView
         flex={1}
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{
           paddingLeft: wrapPaddingX,
           paddingRight: wrapPaddingX,
+          paddingTop: topPad,
           paddingBottom: wrapPaddingBottom,
         }}
       >

@@ -12,7 +12,7 @@ export default function AppLayout() {
 
   return (
     <Stack>
-      <Stack.Screen name="index" options={{ title: 'Dashboard' }} />
+      <Stack.Screen name="index" options={{ headerShown: false }} />
     </Stack>
   );
 }
